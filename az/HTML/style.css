@@ -1,0 +1,47 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5e9;
+    color: #1b5e20;
+}
+
+/* Accent elements */
+a, button {
+    color: white;
+    background-color: #43a047;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Section styles */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h2 {
+    color: #4e342e;
+}
+
+.content img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
