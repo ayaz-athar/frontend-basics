@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Batman Time</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            background: 
+                linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+                url("https://upload.wikimedia.org/wikipedia/en/1/17/Batman-BenAffleck.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #f5c518;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(245, 197, 24, 0.4);
+        }
+
+        button {
+            background: #f5c518;
+            color: #000;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        #demo {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>卐 </h1>
+
+        <button onclick="showTime()">
+            Show Date & Time
+        </button>
+
+        <p id="demo"></p>
+    </div>
+
+    <!-- Sound Effect -->
+    <audio id="clickSound" src="boom.mp3"></audio>
+
+    <script>
+        function showTime() {
+            document.getElementById("demo").innerHTML = new Date();
+            const sound = document.getElementById("clickSound");
+            sound.currentTime = 0; // restart sound
+            sound.play();
+        }
+    </script>
+
+</body>
+</html>
